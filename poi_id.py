@@ -335,7 +335,7 @@ from sklearn.metrics import precision_score, recall_score
 from sklearn.metrics.scorer import make_scorer
 
 def max_recall_with_decent_precision_score(y_true, y_pred):
-    if precision_score(y_true, y_pred) > 0.29:
+    if precision_score(y_true, y_pred) > 0.3:
         return recall_score(y_true, y_pred)
     return 0
 
